@@ -1,0 +1,1 @@
+web: java -jar build/libs/message-server-all.jar

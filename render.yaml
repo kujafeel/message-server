@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: message-server
+    env: java
+    buildCommand: ./gradlew build
+    startCommand: java -jar build/libs/message-server-all.jar
