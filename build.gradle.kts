@@ -31,4 +31,9 @@ tasks.register<Jar>("fatJar") {
         }
     )
     with(tasks.jar.get() as CopySpec)
+
+    kotlin {
+        jvmToolchain(17)
+    }
+
 }
