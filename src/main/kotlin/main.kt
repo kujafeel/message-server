@@ -47,7 +47,6 @@ fun saveMessageToDB(senderId: String, receiverId: String, content: String) {
         "jdbc:sqlserver://kujafeel.cafe24.com;databaseName=kujafeel;user=kujafeel;password=jygoo4691;"
     )
 
-
     val query = """
         INSERT INTO Messages (SenderId, ReceiverId, Content)
         VALUES (?, ?, ?)
